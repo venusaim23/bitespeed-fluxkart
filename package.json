@@ -2,10 +2,10 @@
   "name": "bitespeed-fluxkart",
   "version": "1.0.0",
   "description": "Identify customers across multiple purchases with common mobile and email",
-  "main": "app.ts",
+  "main": "bin/main.ts",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon dist/app.js",
+    "start": "node dist/bin/main.js",
+    "dev": "nodemon dist/bin/main.js",
     "build": "tsc",
     "seed_database": "knex seed:run",
     "create_seed": "knex seed:make --migrations-directory src/models/seeds",
