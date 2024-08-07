@@ -1,0 +1,4 @@
+const PATHS = {
+};
+
+export { PATHS };
