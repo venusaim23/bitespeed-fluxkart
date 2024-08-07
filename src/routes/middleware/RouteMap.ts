@@ -1,12 +1,15 @@
 import express, { Application } from "express";
+import { PATHS } from "./pathConstants";
 
-// add controllers
+import identify from "../controllers/identify";
 
 const router = express.Router();
 
 class RouteMap {
     public static setupRoutesAndAuth(app: Application): void {
-        app.use("/identify", router);
+        app.use("/", router);
+
+        router.use(PATHS["/identify"].ENDPOINT, identify);
     }
 }
 
