@@ -11,7 +11,7 @@ class Swagger {
                 info: {
                     title: "My API",
                     description: "Description",
-                    version: "1.0.0",
+                    version: "1.0.0"
                 },
                 security: [
                     {
@@ -20,7 +20,7 @@ class Swagger {
                     }
                 ]
             },
-            apis: ["./schemaConstants.js", "./pathConstants.js"],
+            apis: [`${__dirname}/schemaConstants.js`, `${__dirname}/pathConstants.js`]
         };
 
         try {
