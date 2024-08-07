@@ -7,7 +7,8 @@ const ERROR_STATUS_CODES = {
 };
 
 const ERROR_MESSAGES = {
-    LOGGING_FAILED_ERROR: () => "Failed to log request - "
+    LOGGING_FAILED_ERROR: () => "Failed to log request - ",
+    UNEXPECTED_ERROR: (message?: string) => `Unexpected Error${!!message ? ` - ${message}` : ""}`,
 };
 
 export { ERROR_STATUS_CODES, ERROR_MESSAGES };
